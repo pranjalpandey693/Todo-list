@@ -1,7 +1,7 @@
 # To-do list
 
  ### Preview
- `todo-list-xi-eight-64.vercel.app/`
+ `todo-list-xi-eight-64.vercel.app/`(todo-list-xi-eight-64.vercel.app/)
 
  ### Functionality
     
