@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Column from "./column";
 import { DragDropContext} from 'react-beautiful-dnd'
 import Addtask from "./addtask";
+import tw from "twin.macro"
 
 
 
@@ -146,11 +147,17 @@ export  const DndTodo =  ()=>{
    
  
  }
+ const Wrapper = styled.div`
+    ${tw`flex justify-center items-center`}
+    `
 
     return (
         <> 
+       <Wrapper>
         <Addtask onaddtask={addTask}/>
+        </Wrapper>
     
+        <Wrapper>
             <DragDropContext   onDragEnd={onDragEnd}
                          onDragStart={onDragStart} >
          <Container>
@@ -170,6 +177,7 @@ export  const DndTodo =  ()=>{
     </Container>
    
     </DragDropContext>
+    </Wrapper>
     </>
 
     )

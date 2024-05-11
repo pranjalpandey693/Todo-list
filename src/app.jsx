@@ -6,12 +6,17 @@ import tw from "twin.macro"
 
 export default function App(){
     const Head = styled.div`
-    ${tw`mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl`}
+    ${tw`flex justify-center items-center mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl`}
+    `
+    const Wrapper = styled.div`
+    ${tw`flex justify-center items-center`}
     `
 return (
     <>
      <Head>To-do list</Head>
+     
     <DndTodo/>
+   
     </>
 )
 }
